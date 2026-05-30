@@ -1,0 +1,7 @@
+timestamp,src_ip,dst_ip,dst_port,protocol,action,bytes_out,bytes_in,event_type,severity,finding,reason
+2026-05-30T09:04:31,10.0.1.33,198.51.100.20,4444,TCP,ALLOW,540,120,unusual_port,medium,Allowed traffic to risky or uncommon port,Destination port 4444 is associated with Common reverse shell port
+2026-05-30T09:05:10,10.0.1.40,192.0.2.77,443,TCP,ALLOW,8210340,35210,outbound_transfer,high,High-volume outbound transfer,"bytes_out is 8210340, above threshold 5000000"
+2026-05-30T09:10:52,10.0.1.40,192.0.2.77,443,TCP,ALLOW,7428120,30100,outbound_transfer,high,High-volume outbound transfer,"bytes_out is 7428120, above threshold 5000000"
+2026-05-30T09:12:03,10.0.1.50,203.0.113.55,5900,TCP,ALLOW,480,90,unusual_port,medium,Allowed traffic to risky or uncommon port,Destination port 5900 is associated with VNC
+multiple,203.0.113.44,10.0.1.10,"22,23,80,443,3389,8080",TCP,DENY,0,0,port_scan_pattern,high,Possible port scan,203.0.113.44 attempted 6 unique destination ports on 10.0.1.10
+multiple,198.51.100.88,10.0.1.22,22,TCP,DENY,0,0,failed_ssh_burst,high,Repeated failed SSH attempts,4 failed SSH attempts from 198.51.100.88 to 10.0.1.22
