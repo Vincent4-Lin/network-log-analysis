@@ -4,6 +4,12 @@ This project analyzes synthetic network security logs and generates a basic inci
 
 It is designed as a beginner-friendly cybersecurity portfolio project for graduate school applications, especially for network security, security operations, and threat analysis.
 
+## Portfolio Position
+
+This repository is an early focused project for firewall-style network log analysis. It is separate from [packet-analyzer](https://github.com/Vincent4-Lin/packet-analyzer), which works at the packet/pcap level, and narrower than [ai-soc-analyst](https://github.com/Vincent4-Lin/ai-soc-analyst), which combines multiple artifact types into a broader SOC triage workflow.
+
+In the portfolio story, this project shows the first step: using transparent Python rules to turn simple network events into a security report.
+
 ## Purpose
 
 The goal is to show practical understanding of:
